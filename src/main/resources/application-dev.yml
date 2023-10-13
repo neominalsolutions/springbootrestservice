@@ -1,0 +1,22 @@
+server:
+  port: 3001
+
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/restserviceDb
+    username: postgres
+    password: admin
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        hibernate.dialect: PostgreSQLDialect
+        ddl-auto: update
+        lob:
+          non_contextual_creation: true
+
+    
+        
+
+
